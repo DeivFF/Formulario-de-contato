@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+body{
+    width: 100%;
+}
+.centralizar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+.container{
+    max-width: 820px;
+    display: flex;
+    box-shadow: 0px 0px 22px 10px rgba(0,0,0,0.17);
+    border-radius: 15px;
+    flex-wrap: wrap;
+}
+.container .lado1{
+    flex: 1 1 50%;
+    padding: 40px;
+    border-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: #fff;
+}
+.container .lado1 h1{
+    color: #1abc9c;
+    font-size: 1.8em;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+.container .lado1 p{
+    margin-bottom: 30px;
+}
+.container .lado2{
+    flex: 1 1 50%;
+    padding: 30px;
+    background-color: #1abc9c;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: relative;
+}
+.container .lado1 .conteudo .conteudo-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.container .lado1 .conteudo .conteudo-item img{
+    height: 30px;
+    margin-right: 15px;
+}
+.container .lado1 .conteudo .conteudo-item span{
+    color: #777;
+}
+
+.container .lado1 .social-media span{
+    display: block;
+}
+.container .lado1   i{
+    background-color: #1abc9c;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    color: #fff;
+    border-radius: 10px;
+}
+.container .lado2 input{
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    margin: 15px 0;
+    background-color: #1abc9c;
+    border-radius: 20px;
+    color: #fefefe;
+}
+.container .lado2 .enviar{
+    background-color: #fefefe;
+    color: #1abc9c;
+    cursor: pointer;
+    width: 35%;
+    font-weight: 600;
+}
+.container .lado2 .enviar:hover{
+    background-color: #1abc9c;
+    border: 2px solid #fefefe;
+    color: #fefefe;
+}
+.container .lado2 .usuario{
+    position: relative;
+}
+.container .lado2 label{
+    color: #fefefe;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    pointer-events: none;
+    font-size: .9em;
+    font-weight: 400;
+}
+.container .lado2 .usuario.focus label{
+    background-color: #1abc9c;
+    padding: 0 5px;
+    top: 0;
+    transform: translateY(-50%);
+}
+.container .lado2 .quadrado{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: #1abc9c;
+    top: 35px;
+    left: -10px;
+    z-index: -10;
+    transform: rotate(45deg);
+}
+.container .lado2 h1{
+    color: #fff;
+}
+.circulo{
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0px 0px 0px 80px #1abc9c;
+    position: absolute;
+    z-index: -10;
+    top: 100px;
+    left: 80px;
+}
