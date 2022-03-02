@@ -9,25 +9,25 @@
     transition: .2s linear;
 }
 body{
-    width: 100%;
-}
-.centralizar{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 90vh;
+    height: 100vh;
 }
+
 .container{
-    max-width: 820px;
+    max-height: 85%;
+    width: 820px;
+    max-width: 90%;
     display: flex;
     box-shadow: 0px 0px 22px 10px rgba(0,0,0,0.17);
     border-radius: 15px;
     flex-wrap: wrap;
+    position: relative;
 }
 .container .lado1{
-    flex: 1 1 50%;
+    flex: 1 1 410px;
     padding: 40px;
-    border-radius: 15px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     background-color: #fff;
@@ -42,7 +42,7 @@ body{
     margin-bottom: 30px;
 }
 .container .lado2{
-    flex: 1 1 50%;
+    flex: 1 1 410px;
     padding: 30px;
     background-color: #1abc9c;
     border-top-right-radius: 15px;
@@ -73,6 +73,9 @@ body{
     height: 40px;
     color: #fff;
     border-radius: 10px;
+}
+.container .lado2 form{
+    z-index: 10;
 }
 .container .lado2 input{
     display: block;
@@ -117,12 +120,12 @@ body{
 }
 .container .lado2 .quadrado{
     position: absolute;
-    height: 50px;
-    width: 50px;
+    height: 26px;
+    width: 26px;
     background-color: #1abc9c;
     top: 35px;
     left: -10px;
-    z-index: -10;
+    z-index: 10;
     transform: rotate(45deg);
 }
 .container .lado2 h1{
@@ -136,6 +139,20 @@ body{
     box-shadow: 0px 0px 0px 80px #1abc9c;
     position: absolute;
     z-index: -10;
-    top: 100px;
-    left: 80px;
+    top: -5%;
+    left: -35%;
+}
+
+@media (max-width: 911px){
+    .container .lado2 .quadrado{
+        right: 10%;
+        top: -3%;
+        left: auto;
+        z-index: 10;
+    }
+    .container .lado1{
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 0  
+    }
 }
